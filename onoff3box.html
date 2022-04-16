@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            display: flex;
+            gap: 10px;
+        }
+        .a1{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+        .a2{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+        .a3{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1 " id="ger">
+        <div class="a1" id="b1"></div>
+        <div class="a2" id="b2"></div>
+        <div class="a3" id="b3"></div>
+        <button id="myF">on/off</button>
+    </div>
+</body>
+    <script>
+        x=0
+        myF.addEventListener('click', function(){
+            if(x==0){
+                b1.style.opacity='0'
+                x+=1
+            } else if (x==1) {
+                b1.style.opacity='1'
+                b2.style.opacity='0'
+                x+=1
+            } else if (x==2) {
+                b2.style.opacity='1'
+                b3.style.opacity='0'
+                x+=1
+            } else {
+                b3.style.opacity='1'
+                x=0
+            }
+        })
+            
+    </script>
+</html>
+<!-- x=document.getElementById("b1").className.opacity
+document.getElementById("b1").className.opacity= document.getElementById("b2").className.opacity;
+b2.className.opacity=b3.className.opacity;
+b3.className.opacity=x; -->
+
+<!-- debugger -->
+<!-- && ba -->
+<!-- || esvel
+!not !true==false
+!false==true -->
+<!-- const let
+ x + x = 1 
+x+=1
+x++
+-->
